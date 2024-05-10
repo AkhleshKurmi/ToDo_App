@@ -6,7 +6,7 @@
     <data>
         <variable
             name="myViewModel"
-            type="com.example.todoapp.TodoViewModelClass" />
+            type="com.example.todoapp.viewmodel.TodoViewModelClass" />
 
 
     </data>
@@ -14,7 +14,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".TodoActivity">
+        tools:context=".Activity.TodoActivity">
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"

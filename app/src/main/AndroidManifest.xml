@@ -16,7 +16,7 @@
             android:name=".Activity.TodoViewActivity"
             android:exported="false" />
         <activity
-            android:name=".TodoActivity"
+            android:name=".Activity.TodoActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

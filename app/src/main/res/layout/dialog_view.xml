@@ -5,7 +5,7 @@
     <data>
         <variable
             name="myViewModel"
-            type="com.example.todoapp.TodoViewModelClass" />
+            type="com.example.todoapp.viewmodel.TodoViewModelClass" />
 
     </data>
 

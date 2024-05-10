@@ -1,4 +1,4 @@
-package com.example.todoapp
+package com.example.todoapp.viewmodel
 
 
 import android.content.Context
@@ -6,6 +6,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.todoapp.Event
 import com.example.todoapp.Repository.TodoRepository
 import com.example.todoapp.RoomDatabase.Table.TodoDbTable
 import kotlinx.coroutines.Dispatchers

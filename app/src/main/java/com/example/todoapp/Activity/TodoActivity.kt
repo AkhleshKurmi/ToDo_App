@@ -1,8 +1,7 @@
-package com.example.todoapp
+package com.example.todoapp.Activity
 
 import android.app.AlertDialog
 import android.app.Dialog
-import android.content.ClipDescription
 import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -13,15 +12,16 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
-import com.example.todoapp.Activity.TodoViewActivity
 import com.example.todoapp.Adapter.TodoRecyclerViewAdapter
 import com.example.todoapp.Factory.TodoViewModelFactory
 import com.example.todoapp.Interface.OnTodoItemClickListner
 import com.example.todoapp.Interface.SetOnItemDeleteClickListner
 import com.example.todoapp.Interface.SetOnItemEditClickListner
+import com.example.todoapp.R
 import com.example.todoapp.Repository.TodoRepository
 import com.example.todoapp.RoomDatabase.Database.TodoDatabase
 import com.example.todoapp.RoomDatabase.Table.TodoDbTable
+import com.example.todoapp.viewmodel.TodoViewModelClass
 import com.example.todoapp.databinding.ActivityTodoBinding
 import com.example.todoapp.databinding.DialogViewBinding
 
@@ -31,7 +31,7 @@ class TodoActivity : AppCompatActivity(){
     lateinit var todoRecyclerViewAdapter: TodoRecyclerViewAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this,R.layout.activity_todo)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_todo)
         var todoDao = TodoDatabase.getInstance(this).todoDao
         var repository : TodoRepository = TodoRepository(todoDao)
 
